@@ -15,7 +15,7 @@ public class Spaceship{
     }
     @Override
     public String toString() {
-        return "Spaceship{" +
+        return "Spaceship " +
                 "team='" + team + '\'' +
                 ", weight=" + weight +
                 "} \n";
