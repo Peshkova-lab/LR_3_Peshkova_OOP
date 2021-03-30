@@ -34,7 +34,7 @@ public class TestStation {
         Assert.assertFalse("Current weight is incorrect", station.checkCurrentWeightSpaceships(spaceship1));
     }
     @Test
-    public void testIsTeam() {
+    public void testIsTeam() throws Exception{
         Station station = new Station();
         Spaceship spaceship = new Spaceship("earthling", 200f);
         Spaceship spaceship1 = new Spaceship("Walker", 100f);
@@ -47,7 +47,7 @@ public class TestStation {
         Assert.assertFalse("It is not turian", station.isTurian(spaceship));
     }
     @Test
-    public void testDeleteSpaceship() {
+    public void testDeleteSpaceship() throws Exception{
         Station station = new Station();
         Spaceship spaceship = new Spaceship("earthling", 1000f);
         station.addSpaceship(spaceship);
@@ -56,7 +56,7 @@ public class TestStation {
         Assert.assertFalse("Delete spaceship happen, but it does not exist!", station.delSpaceship(spaceship));
     }
     @Test
-    public void testStationIsEmpty(){
+    public void testStationIsEmpty() throws Exception{
         Station station = new Station();
 
         Assert.assertTrue("Station is empty!", station.stationIsEmpty());
@@ -68,7 +68,7 @@ public class TestStation {
     }
 
     @Test
-    public void testReport(){
+    public void testReport() throws Exception{
         Station station = new Station();
         Spaceship spaceship = new Spaceship("earthling", 200f);
         Spaceship spaceship1 = new Spaceship("turian", 20000f);
